@@ -4,29 +4,186 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101827">
-  <meta name="description" content="وب‌سایت رسمی گروه DYS Group به‌زودی راه‌اندازی می‌شود.">
-  <title>DYS Group | به‌زودی</title>
+  <meta name="description" content="وب‌سایت رسمی گروه DYS Group - ارائه‌دهنده راهکارهای نوین و خدمات دیجیتال.">
+  <title>DYS Group | صفحه اصلی</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#24344d 0%,#101827 52%,#0a111d 100%);color:#f7f8fb;font-family:Vazirmatn,Tahoma,sans-serif;display:grid;place-items:center;padding:24px}
-    main{width:min(720px,100%);text-align:center;padding:56px 28px;border:1px solid rgba(220,190,125,.24);border-radius:26px;background:rgba(255,255,255,.035);box-shadow:0 24px 80px rgba(0,0,0,.28)}
-    .mark{font-family:Arial,sans-serif;direction:ltr;font-size:clamp(42px,10vw,68px);font-weight:800;letter-spacing:3px;color:#e0c58c;margin:0}
-    .line{width:76px;height:2px;background:#b99a5c;margin:24px auto}
-    h1{font-size:clamp(28px,6vw,42px);margin:0 0 14px;font-weight:700}
-    .lead{font-size:17px;line-height:2;color:#d5dbe5;margin:0 auto;max-width:540px}
-    .en{direction:ltr;font:500 12px Arial,sans-serif;letter-spacing:3px;color:#b9c2d0;margin-top:42px}
-    .foot{font-size:12px;color:#8995a8;margin-top:28px}
+    
+    *{ box-sizing: border-box; }
+    
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 50% 0%, #24344d 0%, #101827 52%, #0a111d 100%);
+      color: #f7f8fb;
+      font-family: Vazirmatn, Tahoma, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(800px, 100%);
+      text-align: center;
+      padding: 56px 28px;
+      border: 1px solid rgba(220, 190, 125, .24);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, .035);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* هاله نوری پشت لوگو */
+    main::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 200px;
+      background: rgba(224, 197, 140, 0.15);
+      filter: blur(60px);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .mark {
+      font-family: Arial, sans-serif;
+      direction: ltr;
+      font-size: clamp(42px, 10vw, 68px);
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #e0c58c;
+      margin: 0;
+      text-shadow: 0 4px 20px rgba(224, 197, 140, 0.3);
+    }
+
+    .line {
+      width: 76px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #b99a5c, transparent);
+      margin: 24px auto;
+    }
+
+    h1 {
+      font-size: clamp(24px, 5vw, 36px);
+      margin: 0 0 16px;
+      font-weight: 700;
+    }
+
+    .lead {
+      font-size: 16px;
+      line-height: 2;
+      color: #d5dbe5;
+      margin: 0 auto 36px;
+      max-width: 600px;
+    }
+
+    /* بخش دکمه‌ها */
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 42px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #e0c58c;
+      color: #101827;
+      box-shadow: 0 8px 24px rgba(224, 197, 140, 0.25);
+      border: 1px solid #e0c58c;
+    }
+
+    .btn-primary:hover {
+      background: #f0d8a5;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(224, 197, 140, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #e0c58c;
+      border: 1px solid rgba(224, 197, 140, 0.5);
+    }
+
+    .btn-outline:hover {
+      background: rgba(224, 197, 140, 0.1);
+      border-color: #e0c58c;
+      transform: translateY(-2px);
+    }
+
+    .en {
+      direction: ltr;
+      font: 500 12px Arial, sans-serif;
+      letter-spacing: 3px;
+      color: #b9c2d0;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    .foot {
+      font-size: 13px;
+      color: #8995a8;
+      margin-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 20px;
+    }
+
+    /* ریسپانسیو برای موبایل */
+    @media (max-width: 480px) {
+      main { padding: 40px 20px; }
+      .btn { width: 100%; }
+    }
   </style>
 </head>
 <body>
   <main>
+    <!-- لوگو -->
     <p class="mark">D&Y-S</p>
     <div class="line"></div>
-    <h1>به‌زودی می‌آییم</h1>
-    <p class="lead">وب‌سایت رسمی گروه DYS Group در حال آماده‌سازی است.<br>به‌زودی با معرفی مجموعه، حوزه‌های فعالیت و فرصت‌های همکاری در کنار شما خواهیم بود.</p>
-    <p class="en">DYS GROUP&nbsp; · &nbsp;COMING SOON</p>
-    <p class="foot">dysgroup.ir</p>
+
+    <!-- عنوان و متن معرفی -->
+    <h1>به گروه DYS خوش آمدید</h1>
+    <p class="lead">
+      ما در DYS Group با تکیه بر دانش و فناوری، راهکارهای نوینی برای رشد و توسعه کسب‌وکارها ارائه می‌دهیم. 
+      برای مشاهده خدمات و استفاده از سیستم‌های ما، از گزینه‌های زیر استفاده کنید.
+    </p>
+
+    <!-- دکمه‌های ارتباطی و هدایت -->
+    <div class="actions">
+      <!-- اتصال به اپلیکیشن (Worker) -->
+      <a href="https://daviya-account.dysgroup.ir/" class="btn btn-primary">
+        ورود به حساب کاربری (Daviya)
+      </a>
+      
+      <!-- دکمه تماس یا بخش دیگر (می‌توانید لینک آن را تغییر دهید) -->
+      <a href="mailto:info@dysgroup.ir" class="btn btn-outline">
+        تماس با ما
+      </a>
+    </div>
+
+    <p class="en">DYS GROUP&nbsp; · &nbsp;INNOVATION &amp; TECHNOLOGY</p>
+    
+    <p class="foot">© 2024 dysgroup.ir - تمامی حقوق محفوظ است.</p>
   </main>
 </body>
 </html>
