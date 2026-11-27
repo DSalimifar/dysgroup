@@ -3,187 +3,134 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101827">
-  <meta name="description" content="وب‌سایت رسمی گروه DYS Group - ارائه‌دهنده راهکارهای نوین و خدمات دیجیتال.">
-  <title>DYS Group | صفحه اصلی</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
-    
-    *{ box-sizing: border-box; }
-    
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: radial-gradient(ellipse at 50% 0%, #24344d 0%, #101827 52%, #0a111d 100%);
-      color: #f7f8fb;
-      font-family: Vazirmatn, Tahoma, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px;
-    }
-
-    main {
-      width: min(800px, 100%);
-      text-align: center;
-      padding: 56px 28px;
-      border: 1px solid rgba(220, 190, 125, .24);
-      border-radius: 26px;
-      background: rgba(255, 255, 255, .035);
-      box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* هاله نوری پشت لوگو */
-    main::before {
-      content: '';
-      position: absolute;
-      top: -50px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200px;
-      height: 200px;
-      background: rgba(224, 197, 140, 0.15);
-      filter: blur(60px);
-      border-radius: 50%;
-      z-index: -1;
-    }
-
-    .mark {
-      font-family: Arial, sans-serif;
-      direction: ltr;
-      font-size: clamp(42px, 10vw, 68px);
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: #e0c58c;
-      margin: 0;
-      text-shadow: 0 4px 20px rgba(224, 197, 140, 0.3);
-    }
-
-    .line {
-      width: 76px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #b99a5c, transparent);
-      margin: 24px auto;
-    }
-
-    h1 {
-      font-size: clamp(24px, 5vw, 36px);
-      margin: 0 0 16px;
-      font-weight: 700;
-    }
-
-    .lead {
-      font-size: 16px;
-      line-height: 2;
-      color: #d5dbe5;
-      margin: 0 auto 36px;
-      max-width: 600px;
-    }
-
-    /* بخش دکمه‌ها */
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 42px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 32px;
-      font-family: inherit;
-      font-size: 16px;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: #e0c58c;
-      color: #101827;
-      box-shadow: 0 8px 24px rgba(224, 197, 140, 0.25);
-      border: 1px solid #e0c58c;
-    }
-
-    .btn-primary:hover {
-      background: #f0d8a5;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(224, 197, 140, 0.4);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: #e0c58c;
-      border: 1px solid rgba(224, 197, 140, 0.5);
-    }
-
-    .btn-outline:hover {
-      background: rgba(224, 197, 140, 0.1);
-      border-color: #e0c58c;
-      transform: translateY(-2px);
-    }
-
-    .en {
-      direction: ltr;
-      font: 500 12px Arial, sans-serif;
-      letter-spacing: 3px;
-      color: #b9c2d0;
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-
-    .foot {
-      font-size: 13px;
-      color: #8995a8;
-      margin-top: 32px;
-      border-top: 1px solid rgba(255,255,255,0.05);
-      padding-top: 20px;
-    }
-
-    /* ریسپانسیو برای موبایل */
-    @media (max-width: 480px) {
-      main { padding: 40px 20px; }
-      .btn { width: 100%; }
-    }
-  </style>
+  <meta name="theme-color" content="#101b2d">
+  <meta name="description" content="D&Y-S | DYS GROUP؛ گروهی چندرشته‌ای با تمرکز بر توسعه پایدار در صنایع چوب، خدمات مالی، فناوری و کشاورزی.">
+  <meta property="og:title" content="D&Y-S | DYS GROUP">
+  <meta property="og:description" content="چهار حوزه تخصصی، یک مسیر مشترک برای توسعه پایدار.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <title>D&Y-S | DYS GROUP — توسعه پایدار، کسب‌وکارهای تخصصی</title>
 </head>
-<body>
+<body data-page="home">
+  <div id="site-header"></div>
   <main>
-    <!-- لوگو -->
-    <p class="mark">D&Y-S</p>
-    <div class="line"></div>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> D&Y-S · DYS GROUP</div>
+          <h1>چهار مسیر تخصصی،<br><em>یک چشم‌انداز مشترک</em></h1>
+          <p class="hero-lead">ایجاد یک گروه چندرشته‌ای با تمرکز بر توسعه پایدار؛ پیوند تجربه، تخصص و نوآوری در تولید، خدمات، فناوری و کشاورزی.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="pages/divisions.html">آشنایی با حوزه‌های فعالیت <span>←</span></a>
+            <a class="text-link light-link" href="pages/about.html">درباره گروه <span>←</span></a>
+          </div>
+          <div class="hero-note"><span class="pulse"></span> همراه کسب‌وکارها در مسیر رشد و تحول</div>
+        </div>
+        <div class="hero-art" aria-label="نشان گرافیکی گروه">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-core"><span>D<span class="amp">&</span>Y-S</span><small>DYS GROUP</small></div>
+          <div class="art-tag tag-top"><b>04</b><span>حوزه فعالیت</span></div>
+          <div class="art-tag tag-bottom"><b>01</b><span>چشم‌انداز مشترک</span></div>
+          <div class="art-cross"></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>تخصص · اعتماد · توسعه</span><span class="scroll-cue">پیمایش به پایین <i>↓</i></span></div>
+    </section>
 
-    <!-- عنوان و متن معرفی -->
-    <h1>به گروه DYS خوش آمدید</h1>
-    <p class="lead">
-      ما در DYS Group با تکیه بر دانش و فناوری، راهکارهای نوینی برای رشد و توسعه کسب‌وکارها ارائه می‌دهیم. 
-      برای مشاهده خدمات و استفاده از سیستم‌های ما، از گزینه‌های زیر استفاده کنید.
-    </p>
+    <section class="intro-strip">
+      <div class="container intro-strip-inner">
+        <p>ما به توسعه‌ای باور داریم که از <strong>تخصص</strong> آغاز شود، با <strong>مسئولیت‌پذیری</strong> ادامه پیدا کند و به <strong>ارزش پایدار</strong> برسد.</p>
+        <span class="strip-mark">DYS / 01</span>
+      </div>
+    </section>
 
-    <!-- دکمه‌های ارتباطی و هدایت -->
-    <div class="actions">
-      <!-- اتصال به اپلیکیشن (Worker) -->
-      <a href="https://daviya-account.dysgroup.ir/" class="btn btn-primary">
-        ورود به حساب کاربری (Daviya)
-      </a>
-      
-      <!-- دکمه تماس یا بخش دیگر (می‌توانید لینک آن را تغییر دهید) -->
-      <a href="mailto:info@dysgroup.ir" class="btn btn-outline">
-        تماس با ما
-      </a>
-    </div>
+    <section class="section divisions-section" id="divisions">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow dark"><span class="eyebrow-line"></span> BUSINESS DIVISIONS</div><h2>حوزه‌های <em>فعالیت</em></h2></div>
+          <a class="text-link" href="pages/divisions.html">مشاهده همه حوزه‌ها <span>←</span></a>
+        </div>
+        <div class="division-grid">
+          <a class="division-card manufacturing" href="pages/division.html?id=manufacturing">
+            <div class="card-top"><span>01 / MANUFACTURING</span><span class="round-arrow">↖</span></div>
+            <div class="division-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 54V23l24-13 24 13v31M8 26h48M18 54V34h28v20M24 34v20M40 34v20M14 23l18 10 18-10" /></svg></div>
+            <h3>صنایع تولیدی و چوب</h3>
+            <p>طراحی، ساخت و نصب کابینت، کمد، تخت‌خواب و مصنوعات MDF، لترون و چوب.</p>
+            <span class="card-link">ورود به حوزه <b>←</b></span>
+          </a>
+          <a class="division-card services" href="pages/division.html?id=services">
+            <div class="card-top"><span>02 / PROFESSIONAL SERVICES</span><span class="round-arrow">↖</span></div>
+            <div class="division-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 18h40v34H12zM21 18v-7h22v7M20 29h24M20 38h10M20 46h18M42 38l4 4 8-9" /></svg></div>
+            <h3>خدمات مالی و حسابداری</h3>
+            <p>خدمات حسابداری، مالیاتی و پشتیبانی مالی متناسب با نیاز کسب‌وکارها.</p>
+            <span class="card-link">ورود به حوزه <b>←</b></span>
+          </a>
+          <a class="division-card technology" href="pages/division.html?id=technology">
+            <div class="card-top"><span>03 / TECHNOLOGY</span><span class="round-arrow">↖</span></div>
+            <div class="division-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="11" width="48" height="34" rx="3"/><path d="M22 54h20M32 45v9M21 25l-7 6 7 6M43 25l7 6-7 6M36 23l-8 16" /></svg></div>
+            <h3>فناوری و نرم‌افزار</h3>
+            <p>عرضه و توسعه نرم‌افزارهای حسابداری، مالی و اداری؛ از جمله DAVIYA ACCOUNT.</p>
+            <span class="card-link">ورود به حوزه <b>←</b></span>
+          </a>
+          <a class="division-card agriculture" href="pages/division.html?id=agriculture">
+            <div class="card-top"><span>04 / AGRICULTURE</span><span class="round-arrow">↖</span></div>
+            <div class="division-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 54V23M32 35C16 35 11 25 12 13c13 0 22 5 20 22ZM32 43c0-15 9-24 21-24 1 13-6 24-21 24ZM17 54h30" /></svg></div>
+            <h3>کشاورزی و محصولات غذایی</h3>
+            <p>تولید، بسته‌بندی و فروش برنج ایرانی و توسعه زنجیره ارزش محصولات کشاورزی.</p>
+            <span class="card-link">ورود به حوزه <b>←</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <p class="en">DYS GROUP&nbsp; · &nbsp;INNOVATION &amp; TECHNOLOGY</p>
-    
-    <p class="foot">© 2024 dysgroup.ir - تمامی حقوق محفوظ است.</p>
+    <section class="section group-section">
+      <div class="container group-layout">
+        <div class="group-visual">
+          <div class="visual-frame"><div class="visual-lines"></div><div class="visual-word">DYS<span>GROUP</span></div><div class="visual-caption">ONE GROUP · FOUR DIRECTIONS</div></div>
+          <div class="visual-stamp">D&Y-S<br><small>EST. / BUILDING FOR TOMORROW</small></div>
+        </div>
+        <div class="group-copy">
+          <div class="eyebrow dark"><span class="eyebrow-line"></span> ABOUT THE GROUP</div>
+          <h2>نگاه یکپارچه،<br><em>تخصص‌های متنوع</em></h2>
+          <p>گروه D&Y-S با رویکرد ایجاد یک مجموعه چندرشته‌ای، فعالیت‌های تخصصی در چهار حوزه تولیدی، خدماتی، نرم‌افزاری و کشاورزی را در چارچوب یک چشم‌انداز مشترک دنبال می‌کند.</p>
+          <p>هدف ما ساختن بستری برای رشد مسئولانه، بهبود کیفیت خدمات و توسعه فرصت‌های تازه در بازارهای هدف است.</p>
+          <a class="btn btn-dark" href="pages/about.html">بیشتر درباره گروه <span>←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow dark"><span class="eyebrow-line"></span> OUR APPROACH</div><h2>اصول حرکت <em>ما</em></h2></div>
+          <p class="heading-note">رشد پایدار، نتیجه تصمیم‌های سنجیده و اجرای مسئولانه است.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-item"><span class="feature-no">01</span><div class="feature-symbol">✳</div><h3>تخصص‌گرایی</h3><p>تمرکز بر دانش و مهارت تخصصی در هر حوزه فعالیت.</p></article>
+          <article class="feature-item"><span class="feature-no">02</span><div class="feature-symbol">◇</div><h3>کیفیت و اعتماد</h3><p>پایبندی به کیفیت، شفافیت و تعهد در تعاملات حرفه‌ای.</p></article>
+          <article class="feature-item"><span class="feature-no">03</span><div class="feature-symbol">↗</div><h3>نوآوری و بهبود</h3><p>استفاده از فناوری و یادگیری مستمر برای ارتقای عملکرد.</p></article>
+          <article class="feature-item"><span class="feature-no">04</span><div class="feature-symbol">⌁</div><h3>توسعه پایدار</h3><p>توجه به آثار اقتصادی، اجتماعی و زیست‌محیطی تصمیم‌ها.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="software-band">
+      <div class="container software-inner">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> A PRODUCT BY DYS GROUP</div><h2>مدیریت مالی هوشمند با <em>DAVIYA ACCOUNT</em></h2><p>با نرم‌افزار حسابداری داویا آشنا شوید؛ محصول نرم‌افزاری گروه که وب‌سایت مستقل خود را دارد.</p></div>
+        <a class="btn btn-gold" href="https://daviya-account.dysgroup.ir/" target="_blank" rel="noopener">ورود به وب‌سایت داویا <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section contact-teaser">
+      <div class="container contact-teaser-inner">
+        <div><div class="eyebrow dark"><span class="eyebrow-line"></span> LET'S CONNECT</div><h2>برای همکاری و ارتباط،<br><em>در کنار شما هستیم.</em></h2></div>
+        <a class="btn btn-dark" href="pages/contact.html">ارتباط با گروه <span>←</span></a>
+      </div>
+    </section>
   </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
